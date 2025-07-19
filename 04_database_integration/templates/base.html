@@ -1,0 +1,26 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Flask App{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h2>🌐 Flask App Navigation</h2>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>
+        </nav>
+        <hr>
+    </header>
+
+    {% block content %}
+    <!-- Child templates will inject content here -->
+    {% endblock %}
+
+    <footer>
+        <hr>
+        <p>🚀 Made with Flask</p>
+    </footer>
+</body>
+</html>
