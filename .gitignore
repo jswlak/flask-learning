@@ -3,4 +3,7 @@
 # Ignore SQLite database
 instance/
 
+*.db
+
+
  
